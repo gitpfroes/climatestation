@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimateStationWeb", "ClimateStationWeb\ClimateStationWeb.csproj", "{B092429A-196B-4411-99A6-5C35A35CAE5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClimateStationWeb", "ClimateStationWeb\ClimateStationWeb.csproj", "{B092429A-196B-4411-99A6-5C35A35CAE5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{30805EA3-F915-4D08-B382-D53D4D5B70CD}"
+EndProject
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "ClimateStationApp", "ClimateStationApp\ClimateStationApp.sfproj", "{2E7FE42D-87F2-4192-8ED6-25E6629F61BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimateActor", "ClimateActor\ClimateActor.csproj", "{96B75374-A38B-49CA-B89D-0DC8225F1762}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimateActor.Interfaces", "ClimateActor.Interfaces\ClimateActor.Interfaces.csproj", "{91AC4171-A496-4DBB-B002-C7163491FEA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,38 @@ Global
 		{B092429A-196B-4411-99A6-5C35A35CAE5F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B092429A-196B-4411-99A6-5C35A35CAE5F}.Release|x64.ActiveCfg = Release|x64
 		{B092429A-196B-4411-99A6-5C35A35CAE5F}.Release|x64.Build.0 = Release|x64
+		{30805EA3-F915-4D08-B382-D53D4D5B70CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30805EA3-F915-4D08-B382-D53D4D5B70CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30805EA3-F915-4D08-B382-D53D4D5B70CD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{30805EA3-F915-4D08-B382-D53D4D5B70CD}.Debug|x64.Build.0 = Debug|Any CPU
+		{30805EA3-F915-4D08-B382-D53D4D5B70CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30805EA3-F915-4D08-B382-D53D4D5B70CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30805EA3-F915-4D08-B382-D53D4D5B70CD}.Release|x64.ActiveCfg = Release|Any CPU
+		{30805EA3-F915-4D08-B382-D53D4D5B70CD}.Release|x64.Build.0 = Release|Any CPU
+		{2E7FE42D-87F2-4192-8ED6-25E6629F61BD}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{2E7FE42D-87F2-4192-8ED6-25E6629F61BD}.Debug|x64.ActiveCfg = Debug|x64
+		{2E7FE42D-87F2-4192-8ED6-25E6629F61BD}.Debug|x64.Build.0 = Debug|x64
+		{2E7FE42D-87F2-4192-8ED6-25E6629F61BD}.Debug|x64.Deploy.0 = Debug|x64
+		{2E7FE42D-87F2-4192-8ED6-25E6629F61BD}.Release|Any CPU.ActiveCfg = Release|x64
+		{2E7FE42D-87F2-4192-8ED6-25E6629F61BD}.Release|x64.ActiveCfg = Release|x64
+		{2E7FE42D-87F2-4192-8ED6-25E6629F61BD}.Release|x64.Build.0 = Release|x64
+		{2E7FE42D-87F2-4192-8ED6-25E6629F61BD}.Release|x64.Deploy.0 = Release|x64
+		{96B75374-A38B-49CA-B89D-0DC8225F1762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B75374-A38B-49CA-B89D-0DC8225F1762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96B75374-A38B-49CA-B89D-0DC8225F1762}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{96B75374-A38B-49CA-B89D-0DC8225F1762}.Debug|x64.Build.0 = Debug|Any CPU
+		{96B75374-A38B-49CA-B89D-0DC8225F1762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B75374-A38B-49CA-B89D-0DC8225F1762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96B75374-A38B-49CA-B89D-0DC8225F1762}.Release|x64.ActiveCfg = Release|Any CPU
+		{96B75374-A38B-49CA-B89D-0DC8225F1762}.Release|x64.Build.0 = Release|Any CPU
+		{91AC4171-A496-4DBB-B002-C7163491FEA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91AC4171-A496-4DBB-B002-C7163491FEA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91AC4171-A496-4DBB-B002-C7163491FEA6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{91AC4171-A496-4DBB-B002-C7163491FEA6}.Debug|x64.Build.0 = Debug|Any CPU
+		{91AC4171-A496-4DBB-B002-C7163491FEA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91AC4171-A496-4DBB-B002-C7163491FEA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91AC4171-A496-4DBB-B002-C7163491FEA6}.Release|x64.ActiveCfg = Release|Any CPU
+		{91AC4171-A496-4DBB-B002-C7163491FEA6}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

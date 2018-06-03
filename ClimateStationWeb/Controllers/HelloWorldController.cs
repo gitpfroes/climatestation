@@ -1,5 +1,9 @@
-﻿using ClimateStationWeb.Models;
+﻿using ClimateActor.Interfaces;
+using ClimateStationWeb.Models;
+using Domain;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.ServiceFabric.Actors;
+using Microsoft.ServiceFabric.Actors.Client;
 using Newtonsoft.Json;
 using System.Net;
 using System.Text.Encodings.Web;
@@ -17,7 +21,13 @@ namespace ClimateStationWeb.Controllers
             WebClient client = new WebClient();
             string jsonData = client.DownloadString(URL);
             Data dataAtual = JsonConvert.DeserializeObject<Data>(jsonData);
-            return "Data e hora atual: " + dataAtual.data + dataAtual.time;
+
+            //Salvar no Azure
+            IClimateActor actor = ActorProxy.Create<IClimateActor>(new ActorId(1), new System.Uri("fabric:/ClimateStationApp/ClimaActorService"));
+            DataEntity dataEntity = new DataEntity(dataAtual.data, dataAtual.time, dataAtual.miliseconds);
+            actor.UploadClimateData(dataEntity);
+
+            return "Upload completado com suceso. <br>Data e hora atual: " + dataAtual.data + ", "+ dataAtual.time;
         }
 
         // 
