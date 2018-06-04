@@ -1,5 +1,5 @@
 ﻿using ClimateActor.Interfaces;
-using ClimateStationWeb.Models;
+using RefrigeratingChamberWeb.Models;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.ServiceFabric.Actors;
@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 using System.Net;
 using System.Text.Encodings.Web;
 
-namespace ClimateStationWeb.Controllers
+namespace RefrigeratingChamberWeb.Controllers
 {
     public class HelloWorldController : Controller
     {

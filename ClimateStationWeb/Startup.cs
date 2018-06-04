@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ClimateStationWeb
+namespace RefrigeratingChamberWeb
 {
     public class Startup
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace ClimateStationWeb.Models
+namespace RefrigeratingChamberWeb.Models
 {
     public class ErrorViewModel
     {

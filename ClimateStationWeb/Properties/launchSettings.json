@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "ClimateStationWeb": {
+    "RefrigeratingChamberWeb": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

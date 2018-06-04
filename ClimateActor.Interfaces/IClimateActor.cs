@@ -17,11 +17,13 @@ namespace ClimateActor.Interfaces
     /// </summary>
     public interface IClimateActor : IActor
     {
+        Task ActivateMe();
         /// <summary>
         /// Atualiza os dados referente a data
         /// </summary>
         /// <param name="count"></param>
         /// <returns></returns>
         Task UploadClimateData(DataEntity dataEntity);
+        Task UploadDeviceData(SampleEntity deviceEntity);
     }
 }

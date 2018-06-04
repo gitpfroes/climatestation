@@ -1,0 +1,16 @@
+﻿@model RefrigeratingChamberWeb.Models.Sample
+
+@{
+    ViewData["Title"] = "Device Details";
+}
+
+<h2>Detalhes Dispositivo</h2>
+
+<div>
+    <h4>Dispositivo</h4>
+    <ul>
+        <li>@Html.DisplayFor(model => model.id)</li>
+        <li>@Html.DisplayFor(model => model.title)</li>
+        <li>@Html.DisplayFor(model => model.body)</li>
+    </ul>
+</div>

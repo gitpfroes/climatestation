@@ -24,7 +24,7 @@ namespace ClimateActor
     [StatePersistence(StatePersistence.Persisted)]
     public class ClimateActor : Actor, IClimateActor
     {
-        private readonly string storageConnectionString = "";
+        private readonly string storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=testepaola;AccountKey=DUFAWmh+e4y9pQsqeV+kuIfYlRG72RKmvoTCthsHUDHMjEemr3AEqqnK8YekdWvxS9bx45c2V8tJyWXXxo01cA==;EndpointSuffix=core.windows.net";
         private CloudTable cloudTable;
 
         /// <summary>
@@ -35,6 +35,19 @@ namespace ClimateActor
         public ClimateActor(ActorService actorService, ActorId actorId) 
             : base(actorService, actorId)
         {
+        }
+
+        public Task UploadDeviceData(SampleEntity deviceEntity)
+        {
+            TableOperation insertOperation = TableOperation.InsertOrReplace(deviceEntity);
+            cloudTable.ExecuteAsync(insertOperation);
+            return Task.FromResult(true);
+        }
+
+        public Task ActivateMe()
+        {
+            this.OnActivateAsync();
+            return Task.FromResult(true);
         }
 
         /// <summary>

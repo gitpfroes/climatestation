@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using ClimateStationWeb.Models;
+using RefrigeratingChamberWeb.Models;
 
-namespace ClimateStationWeb.Controllers
+namespace RefrigeratingChamberWeb.Controllers
 {
     public class HomeController : Controller
     {
